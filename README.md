@@ -5,7 +5,7 @@
 
 <h1> About me!</h1>
 <div style="display:inline-block;vertical-align:top;">
-        <img style="padding: 0px 10px 0px 0px;" src="/img/pic_of_me.png">
+        <img style="padding: 0px 25px 0px 0px;" src="/img/pic_of_me.png">
     </div>
     <div style="display:inline-block;">
         <p>Hey! My name is Emmy :). My pronouns are she/her/hers and I'm from St. Louis, MO.</p> 
