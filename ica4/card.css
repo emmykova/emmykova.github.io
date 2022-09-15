@@ -62,3 +62,7 @@ html {
     height: 7.5em;
     background-color: rgba(0,0,0,0.1);
 }
+
+.card article p {
+    padding-left: .625em;
+}
