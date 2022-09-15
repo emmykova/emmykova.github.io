@@ -35,5 +35,6 @@
       }
 
       a:hover {
-        text-decoration: green;
+        color: green;
+        text-decoration: none;
       }
