@@ -54,6 +54,8 @@ html {
 
 .card p {
     margin: 0em;
+    font-size: .9375em;
+    line-height: .46875em;
 }
 
 .card article {
