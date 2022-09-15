@@ -16,7 +16,7 @@ html {
     width: 35em;
     height: 22em;
     margin: 5em auto;
-    background-color: red;
+    background-color: skyblue;
     border: 0.2em solid black;
     border-radius: 1.5em;
 }
@@ -36,6 +36,6 @@ html {
 /* main styles */
 
 .card article img {
-    max-height: 100px;
+    max-height: 250px;
     float: right;
 }
