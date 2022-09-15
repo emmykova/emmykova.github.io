@@ -36,6 +36,6 @@ html {
 /* main styles */
 
 .card article img {
-    max-height: 25%;
+    max-height: 100px;
     float: right;
 }
