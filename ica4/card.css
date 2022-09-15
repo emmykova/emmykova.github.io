@@ -53,8 +53,8 @@ html {
 
 .card p {
     margin: 0em;
-    font-size: .9375em;
-    line-height: .46875em;
+    font-size: 1.25em;
+    line-height: .625em;
 }
 
 .card article {
