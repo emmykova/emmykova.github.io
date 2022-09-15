@@ -44,3 +44,11 @@ html {
     max-height: 100px;
     float: right;
 }
+
+.card h2 {
+    margin: 0em;
+}
+
+.card p {
+    margin: 0em;
+}
