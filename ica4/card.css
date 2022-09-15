@@ -43,12 +43,13 @@ html {
 .card article img {
     max-height: 100%;
     float: right;
+    color: blanchedalmond;
 }
 
 .card h2 {
     margin: 0em;
     font-size: 1.25em;
-    line-height: ;
+    line-height: .3125em;
 }
 
 .card p {
