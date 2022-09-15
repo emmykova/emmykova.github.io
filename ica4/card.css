@@ -41,13 +41,14 @@ html {
 /* main styles */
 
 .card article img {
-    max-height: 1.2em;
+    max-height: 100%;
     float: right;
 }
 
 .card h2 {
     margin: 0em;
     font-size: 1.25em;
+    line-height: ;
 }
 
 .card p {
