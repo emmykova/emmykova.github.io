@@ -52,3 +52,8 @@ html {
 .card p {
     margin: 0em;
 }
+
+.card article {
+    height: 1.2em;
+    color: rgba(0,0,0,0.1);
+}
