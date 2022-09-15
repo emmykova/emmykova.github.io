@@ -43,7 +43,6 @@ html {
 .card article img {
     max-height: 100%;
     float: right;
-    color: blanchedalmond;
 }
 
 .card h2 {
@@ -61,6 +60,7 @@ html {
 .card article {
     height: 10em;
     background-color: rgba(0,0,0,0.1);
+    color: blanchedalmond;
 }
 
 .card article p {
