@@ -4,6 +4,9 @@
 
 html {
   font-family: sans-serif;
+  background-color: white;
+  border-top: 1mm solid darkred;
+  border-bottom: 1mm solid darkred;
 }
 
 body {
@@ -36,6 +39,8 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
+  background-image: url("/img/logo.png");
+  filter: drop-shadow(2px 2px 1px black);
 }
 
 /* Your CSS below here */
