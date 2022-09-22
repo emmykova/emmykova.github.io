@@ -12,6 +12,7 @@ html {
 body {
   margin: 0;
   background: #ccc;
+  width: 210mm;
 }
 
 article {
