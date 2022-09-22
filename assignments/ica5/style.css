@@ -44,3 +44,13 @@ h1 {
 }
 
 /* Your CSS below here */
+
+.boxtop {
+  background-image: url(/img/top-image.png);
+  background-position: top left;
+}
+
+.boxbottom {
+  background-image: url(/img/bottom-image.png);
+  background-position: bottom left;
+}
