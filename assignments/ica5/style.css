@@ -5,14 +5,14 @@
 html {
   font-family: sans-serif;
   background-color: white;
-  border-top: 1mm solid darkred;
-  border-bottom: 1mm solid darkred;
 }
 
 body {
   margin: 0;
   background: #ccc;
   width: 210mm;
+  border-top: 1mm solid darkred;
+  border-bottom: 1mm solid darkred;
 }
 
 article {
