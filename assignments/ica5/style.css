@@ -36,18 +36,20 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
-  background-image: url("/img/logo.png");
-  filter: drop-shadow(2px 2px 1px black);
 }
 
 /* Your CSS below here */
 
-.boxtop {
-  background-image: url(/img/top-image.png);
-  background-position: top left;
+article {
+  background-image: url(/img/top-image.png), url(/img/bottom-image.png), linear-gradient(grey 0% , white 20% 80%, grey 100%);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  border-top: 1mm solid darkred;
+  border-bottom: 1mm solid darkred;
+  background-color: white;
 }
 
-.boxbottom {
-  background-image: url(/img/bottom-image.png);
-  background-position: bottom left;
+h1 {
+  background-image: url("/img/logo.png");
+  filter: drop-shadow(2px 2px 1px black);
 }
