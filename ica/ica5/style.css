@@ -53,3 +53,9 @@ h1 {
   background-image: url("img/logo.png");
   filter: drop-shadow(2px 2px 1px black);
 }
+
+ul li {
+  display: inline;
+  text-align: center;
+  padding-left: 50px;
+}
