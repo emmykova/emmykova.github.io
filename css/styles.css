@@ -1,6 +1,7 @@
 @media only screen and (max-width:1900px) {
     html {
         background-color: #F2F8FE;
+        box-sizing: border-box;
     }
     
     #logo {
