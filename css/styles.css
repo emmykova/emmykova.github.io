@@ -1,8 +1,11 @@
 @media only screen and (max-width:1900px) {
     html {
         background-color: #F2F8FE;
-        box-sizing: border-box;
     }
+    
+    * {
+        box-sizing: border-box;
+      }
     
     #logo {
         float: left;
@@ -142,10 +145,11 @@
     button {
         margin: 50px;
         font-family: inherit;
+        width: 250px;
     }
     
     .fill1 {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 200;
         letter-spacing: 1px;
         padding: 13px 50px 13px;
@@ -172,6 +176,7 @@
     .fill1:hover::after {
         top: -7px;
         left: -7px;
+        background-color: #7D89A1;
       }
     
     .fill2 {
@@ -344,20 +349,43 @@
     /* main screen */
 
       .-wrapper {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 100px;
+
+        /* display: grid;
         grid-template-columns: 720px 720px;
         grid-template-rows: 1000px 1000px;
         margin-top: 95px;
-        justify-content: space-evenly;
+        justify-content: space-evenly; */
       }
 
-      .grid-item img {
+      .flex-item-left {
+        flex: 50%;
+      }
+
+      .flex-item-left img {
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      .flex-item-right {
+        flex: 50%;
+      }
+
+      .flex-item-right img {
+        max-width: 100%;
+      }
+
+      /* .grid-item img {
         width: 720px;
         height: 1000px;
         object-fit: cover;
-      }
+      } */
 
-      .grid-item a {
+      .flex-item-left a, .flex-item-right a {
         text-decoration: none;
       }
 
@@ -501,9 +529,37 @@
         row-gap: 5px;
         place-items: center;
     }
+
+    .sizin img {
+        width: 500px;
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .sizin {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sizin button {
+        margin-left: -2px;
+    }
+
+    #brick {
+        width: 200px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        margin-top: 200px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        float: left;
+      }
+    
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:800px) {
     .row {
       display:block  
     }
