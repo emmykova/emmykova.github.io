@@ -727,4 +727,12 @@
      .box-grid {
         margin-top: 65px;
      }
-    }
+
+     .size2 {
+        max-width: 100px;
+     }
+
+     .size2_target {
+        max-width: 175px;
+     }
+}
