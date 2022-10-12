@@ -522,8 +522,8 @@
       }
 
       .box-imgggg {
-        width: 800px;
-        height: 500px;
+        width: 700px;
+        height: 450px;
         transition: -webkit-transform .2s ease-in-out;
         transition: transform .2s ease-in-out;
       }
@@ -590,6 +590,15 @@
 
       .b {
         background-color: #7D89A1;
+      }
+
+      .textdecorate {
+        text-decoration: none;
+        color: #7D89A1;
+      }
+
+      .textdecorate:hover {
+        color: #3c414d;
       }
     /* info page */
 
