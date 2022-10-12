@@ -730,9 +730,11 @@
 
      .size2 {
         max-width: 100px;
+        margin-top: 0;
      }
 
      .size2_target {
         max-width: 175px;
+        margin-top: 0;
      }
 }
