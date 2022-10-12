@@ -466,7 +466,6 @@
 
     .grid-text {
         margin-top: 50px;
-
     }
 
     .grid-text p {
@@ -734,7 +733,16 @@
      }
 
      .size2_target {
-        max-width: 175px;
-        margin-top: 0;
+        display: none;
+     }
+
+     .gone {
+        display: none;
+     }
+
+     .wrap {
+        margin-top: 50px;
+        grid-template-columns: 600px;
+        padding-left: 200px;
      }
 }
