@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Silly story generator</title>
+
+    <style>
+
+    body {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: normal;
+        color: #7D8AA1;
+        background-color: #F2F8FE;
+        width: 350px;
+    }
+
+    label {
+      font-weight: normal; 
+      padding: 10px;
+    }
+
+    div {
+      padding-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+    }
+
+    p {
+      background: #7D89A1;
+      color: #F2F8FE;
+      font-weight: 100px;
+      visibility: hidden;
+      padding: 10px;
+    }
+
+    Button {
+        margin: 10px;
+        font-family: inherit;
+        width: 300px;
+    }
+    
+    .randomize {
+        font-size: 18px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        padding: 13px 50px 13px;
+        outline: 0;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .randomize::after {
+        content: "";
+        background-color: #A8A195;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+    }
+    
+    .randomize:hover::after {
+        top: -7px;
+        left: -7px;
+        background-color: #7D89A1;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #CEDBEE;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 300;
+        margin-left: -10px;
+    }
+
+    .img_sizing {
+        width: 100px;
+    }
+
+    .projects {
+        margin-left: 85px;
+        text-decoration: none;
+        padding-top: 5px;
+        border-top: #7D89A1 2px solid;
+        color: #7D89A1;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .projects:hover {
+        border-top: #787b82 3px solid;
+        color: #787b82;
+        font-weight: 525;
+    }
+
+    .aboutMe {
+        margin-right: 85px;
+        text-decoration: none;
+        padding-top: 5px;
+        border-top: #7D89A1 2px solid;
+        color: #7D89A1;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .aboutMe:hover {
+        border-top: #787b82 3px solid;
+        color: #787b82;
+        font-weight: 525;
+    }
+
+    .body {
+        margin-top: 150px;
+    }
+
+    </style>
+
+    <script defer src="../js/assigment8.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar">
+        <a href="projects.html" class="projects"> Projects </a>
+        <a href="main.html"> <img class="img_sizing" src="/img/name_logo.jpeg"> </a>
+        <a href="info.html" class="aboutMe"> Info </a>
+    </div>
+    <div> 
+        <div class="body">
+            <label for="customname">Enter custom name:</label>
+            <input id="customname" type="text" placeholder="">
+        </div>
+        <div>
+            <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+            <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+        </div>
+        <div>
+            <button class="randomize">Generate random story</button>
+        </div>
+            <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+            <p class="story"></p>
+    </div>
+  </body>
+</html>
