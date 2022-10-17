@@ -38,7 +38,7 @@ function result() {
     var temperature =  Math.round(((94-32)*5)/9) + ' centigrade';
 
     var newStory = newStory.replace("300 pounds", weight);
-    var newStory = newStory.replace("94 fahrenheit", temperature);
+    var newStory = newStory.replace("50 fahrenheit", temperature);
 
   }
 
