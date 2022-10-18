@@ -238,6 +238,26 @@
         background-size: 30px;
     }
 
+    .listy {
+      margin-top: 100px;
+      padding: 20px;
+    }
+
+    .listy a {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-decoration: none;
+      color: #7D89A1;
+    }
+
+    .listy a:hover {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: normal;
+      text-decoration: none;
+      color: #3c414d;
+    }
+
     .main_content {
         margin-top: 100px;
     }

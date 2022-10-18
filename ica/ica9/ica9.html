@@ -33,15 +33,101 @@
         color: #aaa;
       }
 
+      #warning {
+        margin: 20px;
+        margin-top: 50px;
+        position: absolute;
+        left: 45%;
+        transform: translate(-50%,-50%);
+      }
+
+      #chat {
+        margin: 20px;
+        margin-top: 50px;
+        position: absolute;
+        left: 55%;
+        transform: translate(-50%,-50%);
+      }
+
+        .navbar {
+        overflow: hidden;
+        background-color: #CEDBEE;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 300;
+        margin-left: -10px;
+    }
+
+        .img_sizing {
+        width: 100px;
+    }
+
+        .projects {
+        margin-left: 85px;
+        text-decoration: none;
+        padding-top: 5px;
+        border-top: #7D89A1 2px solid;
+        color: #7D89A1;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+        .projects:hover {
+        border-top: #787b82 3px solid;
+        color: #787b82;
+        font-weight: 525;
+    }
+
+        .aboutMe {
+        margin-right: 85px;
+        text-decoration: none;
+        padding-top: 5px;
+        border-top: #7D89A1 2px solid;
+        color: #7D89A1;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+        .aboutMe:hover {
+        border-top: #787b82 3px solid;
+        color: #787b82;
+        font-weight: 525;
+    }
+
+    .body {
+        margin-top: 100px;
+    }
+
     </style>
   </head>
   <body>
-    <button>Display message box</button>
+    <div class="navbar">
+        <a href="/projects.html" class="projects"> Projects </a>
+        <a href="/main.html"> <img class="img_sizing" src="/img/name_logo.jpeg"> </a>
+        <a href="/info.html" class="aboutMe"> Info </a>
+      </div>
+    <div class="body">
+        <button id="warning">Warning!</button>
+        <button id="chat">Chat!</button>
+    </div>
+
 
     <script>
 
-        const btn = document.querySelector('button');   
+        const btn = document.querySelector('#warning');   
         btn.addEventListener('click', () => displayMessage('Warning! Your inbox is almost full! Delete some messages!','warning'));
+
+        const btn2 = document.querySelector('#chat');   
+        btn2.addEventListener('click', () => displayMessage('Hello! How are you doing today?','chat'));
 
         function displayMessage(msgText, msgType) {
             const body = document.body;
@@ -62,11 +148,11 @@
 
             if (msgType === 'warning') {
                 msg.style.backgroundImage = 'url(icons/warning.png)';
-                panel.style.backgroundColor = 'red';
+                panel.style.backgroundColor = '#cf5561';
             } 
             else if (msgType === 'chat') {
                 msg.style.backgroundImage = 'url(icons/chat.png)';
-                panel.style.backgroundColor = 'aqua';
+                panel.style.backgroundColor = '#8878c2';
             } 
             else {
                 msg.style.paddingLeft = '20px';
