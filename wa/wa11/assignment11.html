@@ -14,18 +14,29 @@
         <a href="info.html" class="aboutMe"> Info </a>
       </div>
 
-    <div class="app">
-        <header>Random Donald Trump Quotes</header>
-        <section class="quotes">
-          <div class="quote-text" id="js-quote-text"></div>
-        </section>
-        <section class="controls">
-          <button type="button" id="js-new-quote" class="new-quote button">
-            Generate a new quote
-          </button>
-          <!-- <a class="twitter button" id="js-tweet" target="_blank" rel="noreferrer">Tweet it!</a> -->
-        </section>
+      <div class="main">
+        <select onchange="showBreedImage(value); spinner.classList.remove('hidden')" name="breed_selector" id="breed_selector">
+        </select>
+          <div>
+            <a id="wiki_link" target="_blank"></a>
+            <div id="breed_json"></div>
+          </div>
+          <div>
+            <img id="breed_image" onload="spinner.classList.add('hidden');"></img>
+          </div>
+          <div id="js-spinner" class="spinner hidden">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+      </div>
+      <div class="para">
+        I used a cat api, and their sample code website for help with making this. I added a loading bar at the bottom that waits
+        for the image to load. Sometimes the image loads faster and the bar isn't there for very long...
       </div>
       <script src="wa11.js"></script>
 </body>
 </html>
+
