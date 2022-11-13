@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    font-family: Helvetica;
+  }
+  
+  #banner-message {
+    background-color: white;
+    transition: all 0.2s;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  
+  .pimg{
+    width: 20px;
+    height: 20px;
+    color: black;
+    font-size: 10px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  #randomize {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .output {
+    color: white;
+  }
+
+  :root {
+    cursor: none;
+    --cursorX: 50vw;
+    --cursorY: 50vh;
+  }
+  :root:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+    background: radial-gradient(
+      circle 2.5vmax at var(--cursorX) var(--cursorY),
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,.5) 80%,
+      rgba(0,0,0,.95) 100%
+    )
+  }
