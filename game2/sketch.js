@@ -2,18 +2,16 @@ score = 0;
 var pipes = []
 var bird;
 
-let jet;
 let bg;
 let tre;
 let ice;
 let sky;
 
 function preload(){
-  jet = loadImage('/images/jet.png');
-  bg = loadImage('/images/bg.png');
-  tre = loadImage('/images/tree.png');
-  ice = loadImage('/images/ice.png');
-  sky = loadImage('/images/sky.png');
+  bg = loadImage('images/bg.png');
+  tre = loadImage('images/tree.png');
+  ice = loadImage('images/ice.png');
+  sky = loadImage('images/sky.png');
 }
 
 function setup() {
