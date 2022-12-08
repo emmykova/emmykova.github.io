@@ -283,7 +283,7 @@
     .hover_container {
         position: relative;
         animation-name: yourAnimation;
-        animation-delay: 6s;
+        animation-delay: 5s;
         animation-duration: 1s;
         animation-fill-mode: both;
     }
@@ -778,7 +778,7 @@
        }
   
        .blocks {
-          width: 225px;
+          width: 190px;
           height: 175px;
           background-color: #7D89A1;
           margin-left: 15px;
@@ -795,6 +795,42 @@
         display: flex;
         justify-content: space-evenly;
         width: 100%;
+      }
+
+      .mainbody {
+        background-color: black;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .mainbody p {
+        color: white;
+        background-color: goldenrod;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+      }
+
+      .mainnbody {
+        margin-top: 100px;
+        flex-direction: column;
+        background-color: black;
+      }
+
+      .arcadetitle {
+        padding: 50px;
+        margin-bottom: -100px;
+      }
+
+      .arcadebody {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        padding-top: 150px;
       }
 }
 
