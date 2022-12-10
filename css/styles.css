@@ -798,11 +798,10 @@
       }
 
       .mainbody {
-        background-color: black;
+        background-color: #787b82;
         height: 700px;
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
       }
 
       .mainbody p {
@@ -817,12 +816,13 @@
       .mainnbody {
         margin-top: 100px;
         flex-direction: column;
-        background-color: black;
+        background-color: #787b82;
       }
 
       .arcadetitle {
         padding: 50px;
         margin-bottom: -100px;
+        color: #F2F8FE;
       }
 
       .arcadebody {
@@ -984,6 +984,11 @@
       
       .board > [data-status="marked"] {
         background-color: yellow;
+      }
+
+      #snakearcade {
+        width: 475px;
+        margin-left: -25px;
       }
   }
 
