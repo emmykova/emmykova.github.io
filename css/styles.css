@@ -499,6 +499,18 @@
         letter-spacing: 3px;
       }
 
+      .box-captionp {
+        position: absolute;
+        max-width: 300px;
+        margin: 0;
+        padding: .5rem;
+        word-break: break-word;
+        font-size: 20px;
+        background-color: rgba(0,0,0,.3);
+        color: whitesmoke;
+        letter-spacing: 3px;
+      }
+
       .box-caption:hover {
         color:#d9d9d9;
       }
@@ -773,8 +785,10 @@
         height: 200px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         z-index: 300;
+        overflow: auto;
+        white-space: nowrap;
        }
   
        .blocks {
@@ -1205,15 +1219,21 @@
      }
 
      .pros {
-      flex-direction: column;
-      width: 200px;
-      height: 100%;
       justify-content: flex-start;
+      padding-top: 15px;
+      height: 100px;
+      overflow: auto;
+      white-space: nowrap;
+      margin-top: 10px;
      }
 
      .blocks {
       width: 100px;
-      height: 100px;
-      margin: 2px;
+      height: 75px
+     }
+
+     .box-captionp {
+      width: 75px;
+      font-size: 10px;
      }
 }
