@@ -1236,4 +1236,13 @@
       width: 75px;
       font-size: 10px;
      }
+
+     .grid-text p {
+      font-size: 13px;
+      width: 250px;
+     }
+
+     h3 {
+      font-size: 17px;
+     }
 }
