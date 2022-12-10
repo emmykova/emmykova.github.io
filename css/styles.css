@@ -1042,12 +1042,11 @@
 
       .wrap {
         background-image: url(/img/info_bg.jpg);
-        display: grid;
-        grid-template-columns: 600px;
-        grid-template-rows: 1000px;
+        display: flex;
         margin-top: 95px;
         justify-content: space-evenly;
     }
+
 
     .box {
         display: grid;
@@ -1143,8 +1142,6 @@
 
      .wrap {
         margin-top: 50px;
-        grid-template-columns: 600px;
-        padding-left: 200px;
      }
 
      .box-special {
@@ -1205,5 +1202,18 @@
         width: 400px;
         height: 300px;
         margin-top: -25px;
+     }
+
+     .pros {
+      flex-direction: column;
+      width: 200px;
+      height: 100%;
+      justify-content: flex-start;
+     }
+
+     .blocks {
+      width: 100px;
+      height: 100px;
+      margin: 2px;
      }
 }
