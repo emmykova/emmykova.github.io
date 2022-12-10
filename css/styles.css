@@ -827,12 +827,165 @@
 
       .arcadebody {
         display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 100px;
-        padding-top: 150px;
       }
-}
+
+      .game {
+        background-image: url('/img/sky.png');
+        background-size: 600px 200px;
+        width: 600px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      .game p {
+        color: white;
+      }
+
+      #dino {
+        margin-top: -58px;
+        width: 50px;
+        height: 50px;
+        background-image: url(/img/ghost.png);
+        background-size: 50px 50px;
+        position: relative;
+        top: 150px;
+
+      }
+
+      .gamee {
+        margin-top: 100px;
+      }
+
+      .jump {
+        animation: jump 0.3s linear;
+      }
+
+      @keyframes jump {
+        0% {
+          top: 150px;
+        }
+
+        30% {
+          top: 130px;
+        }
+
+        50% {
+          top: 80px;
+        }
+
+        80% {
+          top: 130px;
+        }
+
+        100% {
+          top: 150px;
+        }
+      }
+
+      #cactus {
+        width: 20px;
+        height: 40px;
+        position: relative;
+        top: 110px;
+        left: 580px;
+        background-image: url('/img/star.png');
+        background-size: 20px 40px;
+
+        animation: block 1s infinite linear;
+      }
+
+      @keyframes block {
+        0% {
+          left: 578px;
+        }
+
+        100% {
+          left: -22px;
+        }
+      }
+
+      .snake {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .spacey {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        height: 100vh;
+      }
+
+      .mine {
+        margin: 0;
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+        flex-direction: column;
+        color: white;
+      }
+      
+      .title {
+        margin: 20px;
+      }
+      
+      .subtext {
+        color: #CCC;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      
+      .board {
+        display: inline-grid;
+        padding: 10px;
+        grid-template-columns: repeat(var(--size), 60px);
+        grid-template-rows: repeat(var(--size), 60px);
+        gap: 4px;
+        background-color: #777;
+      }
+      
+      .board > * {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 2px solid #BBB;
+        user-select: none;
+      }
+      
+      .board > [data-status="hidden"] {
+        background-color: #BBB;
+        cursor: pointer;
+      }
+      
+      .board > [data-status="mine"] {
+        background-color: red;
+      }
+      
+      .board > [data-status="number"] {
+        background-color: none;
+      }
+      
+      .board > [data-status="marked"] {
+        background-color: yellow;
+      }
+  }
 
 @media only screen and (max-width:800px) {
     .row {
